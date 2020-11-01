@@ -110,7 +110,8 @@ export default {
         this.exalts = info.exalts;
         this.money = info.assets.toFixed(2);
         })
-       this.socket = io("http://localhost:3000")      
+        // this.socket = io("http://localhost:3000")      
+        this.socket = io("https://project-microservice.elbizza.me")
     },
     mounted() {
         this.socket.on("connect", function() {
@@ -132,8 +133,15 @@ export default {
 .container {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    overflow: hidden;
+    overflow-x: hidden;
 }
+
+/* @media screen {
+    .container {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+} */
 
 .stocks {
     width: 100%;

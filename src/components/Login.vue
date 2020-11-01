@@ -7,7 +7,7 @@
             <label for="email">Email</label>
             <input type="text" v-model="email" id="email"> 
             <label for="password">Password</label>
-            <input type="text" v-model="password" id="password">
+            <input type="password" v-model="password" id="password">
             
             <p></p>
             <input class="submit-button" type="button" value="submit" @click="loginUser()">

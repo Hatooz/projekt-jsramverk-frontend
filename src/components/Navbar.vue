@@ -31,7 +31,7 @@ export default {
     }
   },
   created() {
-  //   this.logged = localStorage.getItem('user') !== 'undefined' && localStorage.getItem('user') !== null
+    this.logged = localStorage.getItem('user') !== 'undefined' && localStorage.getItem('user') !== null
     bus.$on('loggedIn', (data) => {
       this.logged = data
     })

@@ -29,7 +29,7 @@ export default {
         ]
         },
         options: {
-            responsive: false,
+            responsive: true,
             maintainAspectRatio: false
         }
       }
@@ -50,7 +50,8 @@ export default {
 //   },
   created: function() {
     console.log("Starting connection to websocket Server")
-    this.socket = io("http://localhost:3000")
+    // this.socket = io("http://localhost:3000")
+    this.socket = io("https://project-microservice.elbizza.me")
   },
    mounted() {   
     this.socket.on("connect", function() {
